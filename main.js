@@ -34,7 +34,7 @@ const geometry3 = new THREE.OctahedronGeometry(2, 0);
 
 const material3 = new THREE.MeshPhongMaterial({
     color: 0xffffff,
-    shading: THREE.FlatShading
+    //shading: THREE.FlatShading
 });
 
 // inspo: https://codepen.io/tr13ze/pen/pbjWwg
@@ -60,7 +60,7 @@ pointLight.position.set(25, 50, 25);
 scene.add(pointLight);
 
 
-// make canvas responsive 
+// make canvas responsive: https://stackoverflow.com/questions/47756462/how-to-make-responsive-canvas-with-a-3d-model-using-three-js
 window.addEventListener('resize', () => {
 	renderer.setSize(window.innerWidth, window.innerHeight);
 	camera.aspect = window.innerWidth / window.innerHeight;
